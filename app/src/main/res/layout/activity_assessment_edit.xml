@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.AssessmentEditActivity">
+
+    <EditText
+        android:id="@+id/editAssessmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/assessment_title"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editAssessmentDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAssessmentTitle"
+        android:layout_alignStart="@+id/editAssessmentTitle"
+        android:layout_below="@+id/editAssessmentTitle"
+        android:ems="10"
+        android:hint="@string/due_date"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/editAssessmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAssessmentDueDate"
+        android:ems="10"
+        android:hint="@string/end_date"
+        android:inputType="date"
+        android:prompt="@string/select_type"
+        android:entries="@array/type_array"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/buttonSubmitAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editAssessmentType"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/submit_assessment" />
+
+    <CheckBox
+        android:id="@+id/assessmentAlertDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="Alert on Due Date"
+        android:layout_below="@+id/editAssessmentType"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

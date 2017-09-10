@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.CourseDetailActivity">
+
+    <TextView
+        android:id="@+id/courseDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_in_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:textStyle="bold"
+        android:textColor="@color/colorHeadings"
+        android:textSize="@dimen/title_font_size"/>
+
+    <TextView
+        android:id="@+id/courseDetailTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_in_value"
+        android:layout_below="@+id/courseDetailTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/title_font_size"/>
+
+    <TextView
+        android:id="@+id/courseDetailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assessmentListButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="@string/fill_in_value" />
+
+    <Button
+        android:id="@+id/assessmentListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/assessment_list_button" />
+
+    <Button
+        android:id="@+id/courseNotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessmentListButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/course_notes" />
+
+    <TextView
+        android:id="@+id/courseDetailMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/courseNotesButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/fill_in_value"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

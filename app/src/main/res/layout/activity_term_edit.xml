@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.TermEditActivity">
+
+    <EditText
+        android:id="@+id/editTermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/term_title"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTermStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTermTitle"
+        android:layout_alignStart="@+id/editTermTitle"
+        android:layout_below="@+id/editTermTitle"
+        android:ems="10"
+        android:hint="@string/start_date"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTermEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTermStart"
+        android:layout_alignStart="@+id/editTermStart"
+        android:layout_below="@+id/editTermStart"
+        android:ems="10"
+        android:hint="@string/end_date"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonSubmitTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTermEnd"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="@string/submit_term" />
+
+</RelativeLayout>

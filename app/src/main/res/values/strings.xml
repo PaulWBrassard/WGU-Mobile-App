@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">WGU Mobile</string>
+    <string name="view_terms">View Terms</string>
+    <string name="term_title">Term Title</string>
+    <string name="course_title">Course Title</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="submit_term">Submit Term</string>
+    <string name="edit_term">Edit Term</string>
+    <string name="terms">Terms</string>
+    <string name="wrong_date_format">Please enter dates in MM/DD/YY format!</string>
+    <string name="no_term_title">Please add a term title!</string>
+    <string name="action_delete">Delete</string>
+    <string name="course_list_button">View Courses</string>
+    <string name="term_deleted">Term has been deleted!</string>
+    <string name="submit_course">Submit Course</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="no_course_title">Enter valid course title!</string>
+    <string name="assessment_list_button">View Assessments</string>
+    <string name="fill_in_value">This should not show</string>
+    <string name="course_deleted">Course has been deleted!</string>
+    <string name="mentor_name">Mentor Name</string>
+    <string name="mentor_phone">Mentor Phone Number</string>
+    <string name="mentor_email">Mentor Email Address</string>
+    <string name="select_status">Select Course Status</string>
+    <string name="select_type">Select Assessment Type</string>
+    <string name="assessment_title">Assessment Title</string>
+    <string name="due_date">Due Date</string>
+    <string name="type">Type</string>
+    <string name="submit_assessment">Submit Assessment</string>
+    <string name="term_details">Term Details</string>
+    <string name="courses">Courses</string>
+    <string name="course_details">Course Details</string>
+    <string name="assessments">Assessments</string>
+    <string name="edit_assessment">Edit Assessment</string>
+    <string name="assessment_details">Assessment</string>
+    <string name="assessment_deleted">Assessment has been deleted!</string>
+    <string name="no_assessment_title">Please enter a title for this assessment!</string>
+    <string name="wrong_date_or_type">Please enter valid date and type!</string>
+    <string name="term_has_courses">This term has courses and cannot be deleted</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_user">Set User</string>
+    <string name="enter_name">Please enter your name</string>
+    <string name="student_name">Student Name</string>
+    <string name="student">student</string>
+    <string name="welcome">Welcome</string>
+    <string name="course_notes">Course Notes</string>
+    <string name="notes_hint">Enter notes here</string>
+    <string name="notes">Notes</string>
+    <string name="action_photo">Take photo</string>
+    <string name="action_share">Share</string>
+    <string name="course_starting">Course starting</string>
+    <string name="course_ending">Course ending</string>
+    <string name="starting_today">: is starting today!</string>
+    <string name="ending_today">: is ending today!</string>
+    <string name="photo_to_notes">Photo added to corresponding course notes!</string>
+    <string name="photo_added">Your photo has been added!</string>
+    <string name="notes_deleted">Course notes and photos deleted</string>
+    <string name="assessment_due">Assessment Due</string>
+    <string name="due_today">: is due today!</string>
+    <string name="start_before_end">The course must have a start date before it\'s end date!</string>
+    <string-array name="status_array">
+        <item>Select A Status</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan To Take</item>
+    </string-array>
+    <string-array name="type_array">
+        <item>Select Type</item>
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+</resources>

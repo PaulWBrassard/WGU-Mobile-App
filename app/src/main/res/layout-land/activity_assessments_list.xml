@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.AssessmentsListActivity">
+
+    <TextView
+        android:id="@+id/assessmentsNameHeading"
+        android:layout_width="@dimen/title_width_land"
+        android:layout_height="wrap_content"
+        android:text="@string/assessment_title"
+        android:textColor="@color/colorHeadings"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginEnd="@dimen/column_spacing_small"
+        android:layout_marginRight="@dimen/column_spacing_small"/>
+    <TextView
+        android:id="@+id/assessmentsDueDateHeading"
+        android:layout_width="@dimen/detail_width_land"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date"
+        android:textColor="@color/colorHeadings"
+        android:layout_marginEnd="@dimen/column_spacing_small"
+        android:layout_marginRight="@dimen/column_spacing_small"
+        android:layout_toRightOf="@+id/assessmentsNameHeading"
+        android:layout_toEndOf="@+id/assessmentsNameHeading"/>
+    <TextView
+        android:id="@+id/assessmentsTypeHeading"
+        android:layout_width="@dimen/detail_width_land"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:textColor="@color/colorHeadings"
+        android:layout_toRightOf="@+id/assessmentsDueDateHeading"
+        android:layout_toEndOf="@+id/assessmentsDueDateHeading"/>
+
+    <ListView
+        android:id="@+id/assessmentsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assessmentsNameHeading"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/ic_action_add" />
+</RelativeLayout>

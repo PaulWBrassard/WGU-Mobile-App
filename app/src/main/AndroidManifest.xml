@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wgumobile">
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+
+    <receiver android:name=".NotificationReceiver"/>
+    <provider
+            android:name=".DataProvider"
+            android:authorities="com.example.wgumobile.termsprovider"
+            android:exported="false" />
+
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermsListActivity"
+            android:label="@string/terms"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TermEditActivity"
+            android:label="@string/edit_term"
+            android:parentActivityName=".TermsListActivity" />
+        <activity
+            android:name=".TermDetailActivity"
+            android:label="@string/term_details"
+            android:parentActivityName=".TermsListActivity" />
+        <activity
+            android:name=".CoursesListActivity"
+            android:label="@string/courses"
+            android:parentActivityName=".TermDetailActivity" />
+        <activity
+            android:name=".CourseDetailActivity"
+            android:label="@string/course_details"
+            android:parentActivityName=".CoursesListActivity" />
+        <activity
+            android:name=".CourseEditActivity"
+            android:label="@string/edit_course"
+            android:parentActivityName=".CoursesListActivity" />
+        <activity
+            android:name=".AssessmentsListActivity"
+            android:label="@string/assessments"
+            android:parentActivityName=".CourseDetailActivity" />
+        <activity
+            android:name=".AssessmentEditActivity"
+            android:label="@string/edit_assessment"
+            android:parentActivityName=".AssessmentsListActivity" />
+        <activity
+            android:name=".AssessmentDetailActivity"
+            android:label="@string/assessment_details"
+            android:parentActivityName=".AssessmentsListActivity" />
+        <activity
+            android:name=".NotesActivity"
+            android:label="@string/notes"
+            android:parentActivityName=".CourseDetailActivity"/>
+    </application>
+
+</manifest>

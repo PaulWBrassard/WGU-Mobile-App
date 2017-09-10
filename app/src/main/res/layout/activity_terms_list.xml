@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.TermsListActivity">
+
+    <TextView
+        android:id="@+id/termsNameHeading"
+        android:layout_width="@dimen/title_width"
+        android:layout_height="wrap_content"
+        android:text="@string/term_title"
+        android:textColor="@color/colorHeadings"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginEnd="@dimen/column_spacing"
+        android:layout_marginRight="@dimen/column_spacing"/>
+    <TextView
+        android:id="@+id/termsStartHeading"
+        android:layout_width="@dimen/detail_width"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date"
+        android:textColor="@color/colorHeadings"
+        android:layout_marginEnd="@dimen/column_spacing"
+        android:layout_marginRight="@dimen/column_spacing"
+        android:layout_toRightOf="@+id/termsNameHeading"/>
+    <TextView
+        android:id="@+id/termsEndHeading"
+        android:layout_width="@dimen/detail_width"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date"
+        android:textColor="@color/colorHeadings"
+        android:layout_marginEnd="@dimen/column_spacing"
+        android:layout_marginRight="@dimen/column_spacing"
+        android:layout_toRightOf="@+id/termsStartHeading"/>
+
+    <ListView
+        android:id="@+id/termsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/termsNameHeading"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/ic_action_add" />
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.CourseEditActivity">
+
+    <EditText
+        android:id="@+id/editCourseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/course_title"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editCourseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCourseTitle"
+        android:layout_alignStart="@+id/editCourseTitle"
+        android:layout_below="@+id/editCourseTitle"
+        android:ems="10"
+        android:hint="@string/start_date"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editCourseEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCourseStart"
+        android:layout_alignStart="@+id/editCourseStart"
+        android:layout_below="@+id/editCourseStart"
+        android:ems="10"
+        android:hint="@string/end_date"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+
+    <Spinner
+        android:id="@+id/editCourseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:prompt="@string/select_status"
+        android:entries="@array/status_array"
+        android:textAlignment="center"
+        android:layout_below="@+id/editCourseEnd"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editCourseMentorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCourseEnd"
+        android:layout_alignStart="@+id/editCourseEnd"
+        android:layout_below="@+id/editCourseStatus"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/mentor_name"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editCourseMentorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editCourseMentorName"
+        android:layout_alignRight="@+id/editCourseMentorName"
+        android:layout_below="@+id/editCourseMentorName"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/mentor_phone"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editCourseMentorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCourseMentorPhone"
+        android:layout_alignStart="@+id/editCourseMentorPhone"
+        android:layout_below="@+id/editCourseMentorPhone"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/mentor_email"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/courseAlertStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert on Start Date"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_below="@+id/editCourseMentorEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <CheckBox
+        android:id="@+id/courseAlertEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/courseAlertStart"
+        android:layout_toEndOf="@+id/courseAlertStart"
+        android:layout_toRightOf="@+id/courseAlertStart"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="Alert on End Date" />
+
+    <Button
+        android:id="@+id/buttonSubmitCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_course"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>

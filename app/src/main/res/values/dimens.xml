@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="title_font_size">30sp</dimen>
+    <dimen name="title_width">125dp</dimen>
+    <dimen name="title_width_land">230dp</dimen>
+    <dimen name="column_spacing">15dp</dimen>
+    <dimen name="column_spacing_small">5dp</dimen>
+    <dimen name="column_spacing_land">60dp</dimen>
+    <dimen name="detail_font_size">20sp</dimen>
+    <dimen name="detail_width">100dp</dimen>
+    <dimen name="detail_width_large">120dp</dimen>
+    <dimen name="detail_width_land">200dp</dimen>
+    <dimen name="detail_width_large_land">240dp</dimen>
+    <dimen name="course_title_width_land">400dp</dimen>
+    <dimen name="action_bar_title_size">10sp</dimen>
+    <dimen name="margin_top_land">70dp</dimen>
+    <dimen name="margin_left_status">70dp</dimen>
+    <dimen name="margin_left_land">150dp</dimen>
+    <dimen name="margin_bottom_land">30dp</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="button_margin_top">80dp</dimen>
+</resources>

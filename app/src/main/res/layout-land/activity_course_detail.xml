@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wgumobile.CourseDetailActivity">
+
+    <TextView
+        android:id="@+id/courseDetailTitle"
+        android:layout_width="@dimen/course_title_width_land"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:text="@string/fill_in_value"
+        android:textColor="@color/colorHeadings"
+        android:textSize="@dimen/title_font_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/courseDetailTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseDetailTitle"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/fill_in_value"
+        android:textSize="@dimen/title_font_size" />
+
+    <TextView
+        android:id="@+id/courseDetailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseDetailTimes"
+        android:layout_marginLeft="@dimen/margin_left_status"
+        android:text="@string/fill_in_value" />
+
+    <TextView
+        android:id="@+id/courseDetailMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/fill_in_value"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/assessmentListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_bottom_land"
+        android:layout_marginLeft="@dimen/margin_left_land"
+        android:layout_marginRight="@dimen/margin"
+        android:text="@string/assessment_list_button" />
+
+    <Button
+        android:id="@+id/courseNotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_bottom_land"
+        android:layout_toRightOf="@+id/assessmentListButton"
+        android:text="@string/course_notes" />
+
+</RelativeLayout>
